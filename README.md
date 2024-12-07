@@ -1,7 +1,3 @@
-# kafka_spark_ai_proj
-
-# 시스템 아키텍처
-
 ```mermaid
 graph TD
     subgraph Producer
