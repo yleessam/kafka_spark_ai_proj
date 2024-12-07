@@ -7,8 +7,8 @@ graph TD
     end
 
     subgraph Kafka
-        B[Kafka Broker (input_topic)]
-        C[Kafka Broker (output_topic)]
+        B[Kafka Broker - input_topic]
+        C[Kafka Broker - output_topic]
     end
 
     subgraph Spark
@@ -21,7 +21,7 @@ graph TD
     end
 
     subgraph User
-        G[User Request: API Call]
+        G[User Request - API Call]
     end
 
     %% Data Flow
