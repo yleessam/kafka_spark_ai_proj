@@ -3,7 +3,7 @@
 ```mermaid
 graph TD
     subgraph Producer
-        A[Kafka Producer - 샘플 데이터 생성]
+        A[Kafka Producer: 샘플 데이터 생성]
     end
 
     subgraph Kafka
@@ -12,16 +12,16 @@ graph TD
     end
 
     subgraph Spark
-        D[Structured Streaming - PySpark 애플리케이션]
-        D --> E[ML 모델 - Logistic Regression]
+        D[PySpark Streaming Application]
+        D --> E[Machine Learning Model: Logistic Regression]
     end
 
     subgraph REST_API
-        F[Django REST Framework - Prediction API]
+        F[Django REST Framework API]
     end
 
     subgraph User
-        G[사용자 요청 - API Call]
+        G[User Request: API Call]
     end
 
     %% Data Flow
