@@ -33,6 +33,7 @@ graph TD
     C --> F
     G --> F
 
+---
 
 ## 추가 다이어그램: Django와 PySpark 통합 구조
 
@@ -41,7 +42,7 @@ graph TD
 ```mermaid
 graph TD
     A[AWS EC2 Instance] --> B[Ubuntu OS]
-    B --> C[Python & Conda]
+    B --> C[Python & Conda Environment]
     C --> D[Django Application]
     C --> E[PySpark Environment]
 
@@ -55,3 +56,4 @@ graph TD
     G -->|Trigger| D
     D -->|Submit Spark Jobs| E
     E -->|Process Data| H
+```
