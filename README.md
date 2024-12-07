@@ -32,3 +32,26 @@ graph TD
     D --> C
     C --> F
     G --> F
+
+
+## 추가 다이어그램: Django와 PySpark 통합 구조
+
+아래는 Django와 PySpark가 같은 환경에서 구성된 구조를 설명한 다이어그램입니다:
+
+```mermaid
+graph TD
+    A[AWS EC2 Instance] --> B[Ubuntu OS]
+    B --> C[Python & Conda]
+    C --> D[Django Application]
+    C --> E[PySpark Environment]
+
+    D -->|Gunicorn| F[Nginx]
+    F -->|HTTP Requests| G[Users]
+
+    E --> H[Spark Jobs]
+    H --> I[Data Sources]
+    I --> J[Hadoop HDFS or S3]
+
+    G -->|Trigger| D
+    D -->|Submit Spark Jobs| E
+    E -->|Process Data| H
