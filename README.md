@@ -33,7 +33,7 @@ graph TD
     C --> F
     G --> F
 
----
+```
 
 ## 추가 다이어그램: Django와 PySpark 통합 구조
 
